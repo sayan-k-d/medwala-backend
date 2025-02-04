@@ -1,0 +1,111 @@
+
+body {
+  background: rgb(204,204,204); 
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+page[size="A4"][layout="landscape"] {
+  width: 29.7cm;
+  height: 21cm;  
+}
+page[size="A3"] {
+  width: 29.7cm;
+  height: 42cm;
+}
+page[size="A3"][layout="landscape"] {
+  width: 42cm;
+  height: 29.7cm;  
+}
+page[size="A5"] {
+  width: 14.8cm;
+  height: 21cm;
+}
+page[size="A5"][layout="landscape"] {
+  width: 21cm;
+  height: 14.8cm;  
+}
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+
+#parent2 {
+  position: relative;
+}
+
+#child2 {
+  position: absolute;
+  top: 192px;
+  right: 15px;
+  left: 203px;
+  max-width: 180px;
+}
+
+#child3 {
+  position: absolute;
+  top: 230px;
+  right: 15px;
+  left: 203px;
+  max-width: 180px;
+}
+
+#child4 {
+  position: absolute;
+  top: 300px;
+  right: 15px;
+  left: 176px;
+  max-width: 180px;
+}
+
+#child5 {
+  position: absolute;
+  top: 336px;
+  right: 15px;
+  left: 176px;
+  max-width: 180px;
+}
+
+#child6 {
+  position: absolute;
+  top: 266px;
+  right: 15px;
+  left: 176px;
+  max-width: 180px;
+}
+
+#child7 {
+  position: absolute;
+  top: 302px;
+  right: 15px;
+  left: 450px;
+  max-width: 180px;
+}
+
+
+#child8 {
+  position: absolute;
+  top: 192px;
+  right: 15px;
+  left: 540px;
+  max-width: 180px;
+}
+
+#child17 {
+  position: absolute;
+    top: 407px;
+    right: 15px;
+    left: 52px;
+    max-width: 502px;
+}
+

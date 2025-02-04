@@ -6,7 +6,6 @@
 /storage/*.key
 /storage/pail
 /vendor
-/app_medwala/v1/vendor
 .env
 .env.backup
 .env.production

@@ -1,0 +1,57 @@
+
+.row.box1 {
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.uploadimg input[type="file"] {
+  display: block;
+}
+.imageThumb {
+    height: 150px;
+    border: 2px solid;
+    padding: 1px;
+    width: 150px;
+    cursor: pointer;
+    object-fit: cover;
+}
+.pip {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  position:relative;
+}
+.remove {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    right: -9px;
+    top: -7px;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 21px;
+    display:block;
+  
+}
+.remove .fa{
+    font-size:20px;
+    color:#000;
+}
+.remove:hover {
+  background: white;
+  color: black;
+}
+.wrapper_box {
+    background:#fff;
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.1);
+    padding:20px;
+    border-radius:15px;
+}

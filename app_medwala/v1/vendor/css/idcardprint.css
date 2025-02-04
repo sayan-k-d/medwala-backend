@@ -1,0 +1,123 @@
+
+body {
+  background: rgb(204,204,204); 
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+page[size="A4"][layout="landscape"] {
+  width: 29.7cm;
+  height: 21cm;  
+}
+page[size="A3"] {
+  width: 29.7cm;
+  height: 42cm;
+}
+page[size="A3"][layout="landscape"] {
+  width: 42cm;
+  height: 29.7cm;  
+}
+page[size="A5"] {
+  width: 14.8cm;
+  height: 21cm;
+}
+page[size="A5"][layout="landscape"] {
+  width: 21cm;
+  height: 14.8cm;  
+}
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+
+#parent2 {
+  position: relative;
+}
+.name {
+    position: absolute;
+    bottom: 118px;
+    font-size: 13px;
+    left: 66px;
+}
+
+.pic {
+    position: absolute;
+    bottom: 140px;
+    font-size: 13px;
+    left: 103px;
+}
+
+.gname {
+position: absolute;
+    bottom: 105px;
+    font-size: 13px;
+    left: 109px;
+}
+
+.reg {
+position: absolute;
+    bottom: 90px;
+    font-size: 13px;
+    left: 191px;
+}
+
+.contact {
+    position: absolute;
+    bottom: 76px;
+    font-size: 13px;
+    left: 172px;
+}
+
+.address {
+    position: absolute;
+    bottom: 65px;
+    font-size: 10px;
+    left: 77px;
+}
+
+.dob {
+position: absolute;
+    bottom: 79px;
+    font-size: 8px;
+    left: 89px;
+}
+
+.crs {
+position: absolute;
+    bottom: 93px;
+    font-size: 8px;
+    left: 70px;
+}
+
+.centercode {
+    position: absolute;
+    bottom: 50px;
+    font-size: 8px;
+    left: 94px;
+}
+
+.centeraddress {
+    position: absolute;
+    bottom: 7px;
+    font-size: 8px;
+    left: 23px;
+    max-width: 77px;
+}
+
+.centerphn {
+   position: absolute;
+    bottom: 2px;
+    font-size: 8px;
+    left: 179px;
+    max-width: 77px;
+}

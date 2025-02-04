@@ -1,0 +1,40 @@
+/* your styles go here */
+
+ a {
+        padding: 0px;
+        margin: 0px;
+        outline: none;
+        text-decoration: none;
+        
+    }
+
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    ul li {
+        padding: 0px;
+        margin: 0px;
+    }
+
+.input-field span{
+    display:block;
+   
+    
+}
+.box1 .input-field a{
+    color:#000;
+    
+}
+.form-control-label{
+    display:block;
+}
+a:hover, a:focus {
+    color: #004ef9;
+    text-decoration: none !important;
+}
+.btn-success{
+    color:#fff !important;
+}
