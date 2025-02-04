@@ -1,0 +1,17 @@
+<?php
+/*
+=========================================================================================================================
+COPYRIGHT: NEOCODERZ TECHNOLOGIES
+PRODUCT NAME: TRAVEL PORTAL
+PAGE NAME: CONFIG.PHP
+PAGE FUNCTIONALITY: THIS PAGE DEFINES THE LISTS OF DATABASE TABLES THAT HAS BEEN USED IN THIS PRODUCTS.
+=========================================================================================================================
+*/
+define( "ADMIN", "admin" );
+define( "CATAGORY", "catagory" );
+define( "SUBCATAGORY", "subcatagory" );
+define( "BUSINESS", "business" );
+define( "CITY", "city" );
+define( "BLOG", "blog" );
+define( "VENDORRQST", "vendorrqst" );
+?>

@@ -1,0 +1,28 @@
+/* your styles go here */
+.kitchen-status{
+  border: 1px solid #000;
+  margin-bottom: 30px;
+  padding: 20px 15px;
+}
+.kitchen-status p{
+	position: relative;
+}
+.kitchen-status p span{
+	
+	position: absolute;
+	left: 200px;
+}
+.kitchen-status strong{
+	font-weight: 400 !important;
+	width: 200px;
+	position: absolute;
+	left: 200px;
+}
+.kitchen-status strong:last-child{
+	left: 350px;
+}
+.kitchen-status strong span{
+	display: block;
+	position: relative;
+	left: unset;
+}
