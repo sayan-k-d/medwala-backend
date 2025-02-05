@@ -15,12 +15,12 @@ define("DATABASE_SERVER", "localhost");
 define("DATABASE_NAME", "u676663263_medwala");
 
 //ENTER THE USERNAME THAT CONNECTS TO YOUR DATABASE
-// define("DATABASE_USERNAME", "u676663263_medwala");
-define("DATABASE_USERNAME", "root");
+define("DATABASE_USERNAME", "u676663263_medwala");
+// define("DATABASE_USERNAME", "root");
 
 //ENTER THE PASSWORD FOR YOUR  USER
-// define("DATABASE_PASSWORD", "mEdwala#321");
-define("DATABASE_PASSWORD", "");
+define("DATABASE_PASSWORD", "mEdwala#321");
+// define("DATABASE_PASSWORD", "");
 
 //ENTER THE DOMAIN NAME FOR YOUR APPLICATION
 define("DOMAIN_NAME_PATH", "https://medwala.in/app_medwala/v1/");
