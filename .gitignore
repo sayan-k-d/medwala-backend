@@ -20,5 +20,5 @@ yarn-error.log
 /.idea
 /.vscode
 /.zed
-app_medwala\v1\admin-login\authenticate.php
-app_medwala\v1\admin-login\configurations/config.php
+/app_medwala/v1/admin-login/authenticate.php
+/app_medwala/v1/admin-login/configurations/config.php
