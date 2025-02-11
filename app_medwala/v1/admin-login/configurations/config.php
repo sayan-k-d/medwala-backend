@@ -7,20 +7,26 @@ PAGE NAME: CONFIG.PHP
 PAGE FUNCTIONALITY: CONSISTS OF WEBSITE GENERAL AND OVERALL CONFIGURATION SETTINGS AND DEFINATION OF CONSTANTS AND GLOBAL VARIABLES USED THROUGHOUT THE WEBSITE.
 =========================================================================================================================
 */
-
+$envFile = __DIR__ . '/../../../../.env';
+if (file_exists($envFile)) {
+    $env = parse_ini_file($envFile);
+} else {
+    $env = [];
+}
+// print_r(__DIR__);
 //ENTER THE NAME OF THE DATABASE SERVER YOU ARE CONNECTING TO. NORMALLY SET TO "localhost"
-define("DATABASE_SERVER", "localhost");
+define("DATABASE_SERVER", $env['DATABASE_SERVER'] ?? "localhost");
 
 //ENTER THE NAME OF YOUR DATABASE
-define("DATABASE_NAME", "u676663263_medwala");
+define("DATABASE_NAME", $env['DATABASE_NAME'] ?? "u676663263_medwala");
 
 //ENTER THE USERNAME THAT CONNECTS TO YOUR DATABASE
-// define("DATABASE_USERNAME", "u676663263_medwala");
-define("DATABASE_USERNAME", "root");
+define("DATABASE_USERNAME", $env['DATABASE_USERNAME'] ?? "u676663263_medwala");
+// define("DATABASE_USERNAME", "root");
 
 //ENTER THE PASSWORD FOR YOUR  USER
-// define("DATABASE_PASSWORD", "mEdwala#321");
-define("DATABASE_PASSWORD", "");
+define("DATABASE_PASSWORD", $env['DATABASE_PASSWORD'] ?? "mEdwala#321");
+// define("DATABASE_PASSWORD", "");
 
 //ENTER THE DOMAIN NAME FOR YOUR APPLICATION
 define("DOMAIN_NAME_PATH", "https://medwala.in/app_medwala/v1/");
