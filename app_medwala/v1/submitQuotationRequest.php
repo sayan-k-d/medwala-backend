@@ -260,7 +260,7 @@
                                         $values=":quoteid,:image,:date,:time,:type";
                                         $execute=array(
                                           ':quoteid'=>$quoteid,
-                                          ':image'=>'https://medwala.in/app_medwala/v1/saved_prescriptions/'.$filename_path,
+                                          ':image'=>'https://https://medwala.optimumpointbiz.com//app_medwala/v1/saved_prescriptions/'.$filename_path,
                                           ':date'=>$date,
                                           ':time'=>$time,
                                           ':type'=>'Saved',
