@@ -41,7 +41,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
         $stmt->fetch();
         // Account exists, now we verify the password.
         // Note: remember to use password_hash in your registration file to store the hashed passwords.
-        if ($_POST['password'] === $password) {
+        if (password_verify($_POST['password'], $password)) {
             // Verification success! User has loggedin!
             // Create sessions so we know the user is logged in, they basically act like cookies but remember the data on the server.
             session_regenerate_id();
@@ -51,10 +51,25 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
             setcookie('user', $_POST['username'], time() + (86400 * 365), "/");
             header('Location: admin-panel.php');
         } else {
-            echo 'Incorrect password!';
+            echo '<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>';
+            echo "<script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        Swal.fire('Error', 'Incorrect Password!', 'error').then(() => {
+                                window.location.href = 'index.php';
+                            });
+                    });
+                  </script>";
         }
     } else {
-        echo 'Incorrect username!';
+        echo '<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>';
+        echo "<script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        Swal.fire('Error', 'Incorrect Username!', 'error').then(() => {
+                                window.location.href = 'index.php';
+                            });
+                    });
+                  </script>";
+        // echo 'Incorrect username!';
     }
 
     $stmt->close();
